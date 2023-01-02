@@ -1,0 +1,121 @@
+/* General */
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.container-fluid {
+  padding: 3% 15% 3%;
+}
+
+/* Header Section */
+
+.header-section {
+  background-color: #a347e1;
+  color: #fff;
+}
+
+.header-logo {
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+
+.header-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  left: 16px;
+  position: relative;
+  top: 8px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.nav-button {
+  margin: 0 0 10px;
+}
+
+/* Hero Section */
+.hero-section {  
+  text-align: left;
+  padding-top: 2%;
+}
+
+.hero-image-div {
+  text-align: center;
+}
+
+/* Feature Section */
+.feature-section {
+  text-align: center;
+}
+
+.feature-icon {
+  color: #a347e1;
+  font-size: 1.5em;
+}
+
+.feature-title {
+  color: #a347e1;
+}
+
+.feature-description {
+  padding: 0 5%;
+}
+
+/* Comparison Section */
+.comparison-section {
+  background-color: #ada6ca;
+  color: #fff;
+  text-align: center;
+}
+
+.comparison-table {
+  color: white;
+}
+
+.comparison-table tbody th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #a49ec0;
+}
+
+.comparison-table th:nth-child(2),
+.comparison-table td:nth-child(2) {
+  background-color: #a347e140;
+}
+
+.comparison-table .fa-xmark {
+  color: #8d8d8d;
+}
+
+.comparison-button {
+  background-color: #a347e1;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #a347e1;
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer-icon {
+  color: #a347e1;
+}

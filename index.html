@@ -1,69 +1,274 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Matt's Personal Site</title>
-</head>
-<body>
-    <table cellspacing="20">
-        <tr>
-           <td><img src="images/Profile.png" alt="A profile picture" width="125" height="125"></td> 
-        <td>
-            <h1>Matt Dougherty</h1>
-            <p><em>Web Developer</em></p>
-            <p>I am Matt, I am learning web development.</p>
-        </td>
-        </tr>
-    </table>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lenz - Fantasy Football</title>
+    <meta name="author" content="Lenz" />
+    <link rel="icon" href="favicon.ico" />
 
-    <hr>
-    <h3>Education</h3>
-    <ul>
-        <li><a href="#">School</a></li>
-        <li>University</li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2010-2013</td>
-                <td>Lead Developer at Test App</td>
-            </tr>
-            <tr>
-                <td>2010</td>
-                <td>Ate McDonalds at McDonalds</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>Web Development</td>
-            <td>★★★★★</td>
-        </tr>
-        <tr>
-            <td>Agile</td>
-            <td>★★★★★</td>
-        </tr>
-        <tr>
-            <td>Problem Solving</td>
-            <td>★★★</td>
-        </tr>
-        <tr>
-            <td>Thinking</td>
-            <td>★★★</td>
-        </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <br>
-    <a href="contact-me.html">Contact Me</a>
-</body>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto+Slab:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.2.1/js/all.js"
+    ></script>
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section class="header-section">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="#" class="navbar-brand">
+            <img
+              class="header-logo"
+              src="images/lenz-logo.png"
+              alt="lenz-logo"
+            />
+            <h1 class="header-title">Lenz</h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-light nav-button col-12"
+                >
+                  Login
+                </button>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-light nav-button col-12">
+                  Sign-up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+
+        <section class="hero-section">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="hero-title">Fantasy Footy the way you want it.</h1>
+              <p class="hero-text">
+                Come and play the best in draft style fantasy with live drafts,
+                live scoring and fully custom leagues. Create your league with
+                friends today!
+              </p>
+              <div class="hero-buttons">
+                <button type="button" class="btn btn-light btn-lg hero-button">
+                  Sign-up
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light btn-lg hero-button"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6 hero-image-div">
+              <img
+                src="images/lenz-logo.png"
+                class="hero-image"
+                alt="lenz-logo"
+                width="400"
+                height="400"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="feature-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h2><i class="fa-solid fa-list-ol feature-icon"></i></h2>
+            <h2 class="feature-title">Draft Style Fantasy</h2>
+            <p class="feature-description">
+              It's no secret that draft fantasy is the most exciting way to play
+              fantasy football. From the exhilarating live draft, the fact that
+              two players can't be owned by the same team, proposing trades and
+              signing free agents - there's no better way to play.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h2><i class="fa-solid fa-door-open feature-icon"></i></h2>
+            <h2 class="feature-title">Sliding Doors</h2>
+            <p class="feature-description">
+              The only league outside of the AFL to have a weekly article from
+              the pinnacle of sports journalism. Where else can you find your
+              articles in an easy-to-read Excel workbook format.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h2>
+              <i class="fa-solid fa-magnifying-glass-chart feature-icon"></i>
+            </h2>
+            <h2 class="feature-title">Unrivaled Analysis</h2>
+            <p class="feature-description">
+              Seam will assess your team a minimum of three times per week, he
+              will provide a whole list of opinions and options only for you to
+              decide against them all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+      <div class="container-fluid">
+        <h2 class="comparison-title">Why Lenz?</h2>
+        <p>We offer what the others can't</p>
+        <div class="table-responsive">
+          <table class="table table-borderless comparison-table">
+            <thead class="">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">
+                  <strong
+                    ><img
+                      src="images/lenz-logo.png"
+                      alt="lenz-logo"
+                      height="32px"
+                    />
+                    Lenz</strong
+                  >
+                </th>
+                <th scope="col"><strong>Ultimate Footy</strong></th>
+                <th scope="col"><strong>AFL Fantasy</strong></th>
+                <th scope="col"><strong>Supercoach</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Draft Enabled</th>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Customisable Scoring System</th>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Key Position Players</th>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Multi-Team Trades</th>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Custom Built</th>
+                <td><i class="fas fa-check"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+                <td><i class="fas fa-xmark"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button type="button" class="btn btn-lg comparison-button">
+          All Features
+        </button>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container-fluid">
+        <h1 class="cta-title">Ready to play?</h1>
+        <div class="col">
+          <p class="cta-text">
+            Sign-up now and draft your ultimate fantasy footy team.
+          </p>
+          <button type="button" class="btn btn-light btn-lg">Sign-up</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section>
+      <div class="container-fluid">
+        <footer class="">
+          <div class="">
+            <img src="images/lenz-logo.png" alt="lenz-logo" height="28px" />
+            <span class="">© 2022 Lenz Fantasy Football</span>
+          </div>
+
+          <a class="footer-icon" href="#"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="footer-icon" href="#"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a class="footer-icon" href="#"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+        </footer>
+      </div>
+    </section>
+  </body>
 </html>
